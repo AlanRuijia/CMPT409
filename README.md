@@ -1,6 +1,7 @@
 # UVa_Solutions
 
 This repository provides the implementations for UVa questions.
+
 Here is the UVa online judge link: https://uva.onlinejudge.org
 
 ## Erdos Number
@@ -12,7 +13,7 @@ a two dimensional red-black tree.
 - A BFS is performed to calculate the Erdos number for every person. 
 - the Erdos number for required people are printed. Suppose there are N people and P papers. 
 So there are at most `N2` relations. 
-### Time complexity
+### Time complexity:
 - The time took to construct the two dimensional tree is `O(PN2logN)`. 
 - The time took for calculating the Erdos number is then `O(NlogN)`
 
@@ -28,5 +29,5 @@ num(S[n], T[m]) = num(S[n-1], T[m-1]) + num(S[n-1], T[m])
 Else,
 	num(S[n], T[m]) = num(S[n-1], T[m])
 then it is solved by dynamic programming. 
-### Time complexity and Space complexity
+### Time complexity and Space complexity:
 The time complexity for the algorithm is `O(nm)`. Space complexity is `O(m+n)`.
